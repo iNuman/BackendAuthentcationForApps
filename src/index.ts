@@ -21,14 +21,14 @@ app.use(bodyParser.json());
 
 const server = http.createServer(app);
 
-// server.listen(8080, () => {
-//   console.log("Server running on http://localhost:8080/");
-// });
-
-const hostname = '192.168.100.101';
- server.listen(8080, hostname, () => {
-    console.log(`Server running on http://${hostname}:8080/`);
+server.listen(8080, () => {
+  console.log("Server running on http://localhost:8080/");
 });
+
+// const hostname = '192.168.000.000';
+//  server.listen(8080, hostname, () => {
+//     console.log(`Server running on http://${hostname}:8080/`);
+// });
 
 const MONGO_URL = "mongodb://localhost:27017/Auth";
 
